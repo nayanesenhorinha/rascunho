@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 60px); /* Ajuste conforme a altura do cabeçalho */
+    position: relative;
+}
+
+.chapter {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    overflow: auto;
+    scroll-snap-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chapter img {
+    max-width: 100%;
+    height: auto;
+}
