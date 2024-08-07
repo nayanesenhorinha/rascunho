@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>My eBook</h1>
-        <img src="images/cover.png" alt="Cover Image" />
-    </header>
-    <div id="container"></div>
+    <div class="page" id="index">
+        <header>
+            <h1>My eBook</h1>
+            <img src="images/cover.png" alt="Cover Image" />
+        </header>
+        <a href="nav.html" class="nav-link">Go to Navigation</a>
+    </div>
+    <div class="page" id="nav" style="display: none;">
+        <!-- Navigation content will be loaded here dynamically -->
+    </div>
+    <div id="chapters"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
